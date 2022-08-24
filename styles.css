@@ -163,15 +163,22 @@ a{
     position: absolute;
     top: 20%
 }
-.imagen{
-    display: flex;
-    position: relative;
-    border-radius: 5%;
-    width: 50%;
-    justify-content: center;
-    padding: 20px;
-    align-items: center;
+.conteiner-inicio{
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
+    
+}
+.imagen{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+.img-inicio{
+    height: fit-content;
+    width: fit-content;
 }
 .img{
     align-items: center;
@@ -220,6 +227,7 @@ a{
     font-size: 40px;
     color: #f5cf83;
     justify-content: center;
+    text-decoration: none;
     
 
 }
