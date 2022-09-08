@@ -1,105 +1,17 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-body{
-    background-color: rgb(254, 245, 234);
-}
-@font-face {
-    font-family: logo;
-    src: url("./fonts/Poppins-Regular.ttf")}
+@import "./../partials/variables";
 
-@font-face {
-    font-family: titulos;
-    src: url("./fonts/Autography.otf");}
+@import "./../partials/reset";
+@import "./../partials/header";
+@import "./../partials/hero";
+@import "./../partials/letrasGrandes";
+@import "./../partials/footer"; 
+@import "./../partials/popup";
+@import "./../partials/galeria";
 
-@font-face {
-    font-family: textos;
-    src: url("./fonts/RhodiumLibre-Regular.ttf");
-}
-a{
-    text-decoration: none;
-}    
-.grid-ideas{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    height: 50vh;
-}
-.letra {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10%;
-    height: 150vh;
-}
-.titulo-letra{
-    position: absolute;
-    display: block;
-    font-family: logo;
-    font-size: 20px;
-    color: #ff7077;
-    writing-mode: vertical-rl;
-    text-decoration: none;
-}
-.letra-i{
-    width: 100%;
-    height: 60%;
-} 
-@media (hover:hover){
-    .letra-i:hover{
-        transform: scale(0.8);
-    }
-}
-.letra-d{
-    width: 100%;
-    height: 50%;
-}  
-@media (hover:hover){
-    .letra-d:hover{
-        transform: scale(1.2);
-    }
-}
-.letra-e{
-    width: 100%;
-    height: 40%;
-} 
-@media (hover:hover){
-    .letra-e:hover{
-        transform: scale(1.1);
-    }
-}
-.letra-a{
-        width: 100%;
-        height: 55%;
-    } 
-@media (hover:hover){
-    .letra-a:hover{
-        transform: scale(0.6);
-}
-}
-.letra-s{
-        width: 100%;
-        height: 50%;} 
-
-@media (hover:hover) {
-    .letra-s:hover{
-        transform: scale(0.8);
-    }
-}
 .galeria{
     height: 100%;
 }
-.grid-galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20 px;
-    margin-bottom: 10%;
-    }
-.item-galeria{
-    position: relative;
-    height: 80vh;
-    cursor: pointer;
-}
+
 .titulo-galeria {
     position: absolute;
     background-color: black;
@@ -110,86 +22,8 @@ a{
     font-size: 12px;
     bottom: 20%;
 }
-.img-galeria{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 500ms;
-}
-.capa{
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.535);
-    opacity: 0;
-    visibility: hidden;
-    color: #fce0e1;
-    font-family: titulos;
-    text-align: center;
-}
-.capa h3{
-    margin-top: 40%;
-    font-size: 100px;
-    
-}
-.item-galeria:hover >.capa{
-    opacity: 1;
-    visibility: visible;
-}
-.container-modal1 {
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 600ms;
-}
-.container-modal1:target{
-    background-color:#845558;
-    visibility: visible;
-    opacity: 1;
 
-}
-.popup1 {
-width: 100%;
-max-width: 900px;
-height: 500px;
-display: flex;
-position: relative;
-background-color: #fce0e1;
-left: 15%;
-}
-.imgmodal1{
-    width: 40%;
-    background-image: url(./images/eventos.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.text-modal1{
-    width: 60%;
-    padding: 50px;
-    overflow-y: auto;
-}
-.text-modal1 h1{
-    font-size: 30px;
-    font-family: logo;
-    letter-spacing: 5px
-}
-.btn-close-popup{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: -20px;
-    top: -20px;
-    padding: 20px;
-    background-color: #000;
-    color: #ffff;
-    text-decoration: none;
-    border-radius: 50%;
-    line-height: 10px;
 
-}
 @media screen and (max-width: 900px) {
     .popup1{
         flex-direction: column;
@@ -207,86 +41,6 @@ left: 15%;
     }
 }
 
-.header {
-    height: 20vh; 
-    padding: 5px 10%;
-    margin: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 15px;
-}
-.logo {
-    display: flex;
-    height: 70px;
-    width: auto;
-    justify-content: space-evenly;
-}
-.tipo-logo{
-    display: flex;
-    height: 70px;
-    flex-direction: column;
-}
-.logo-img{
-    height: 60px;;
-    margin-right: 20px;
-    margin-left: 23px;
-    margin-bottom: 20px;
-    background-image: url(./images/logo/alborotando/ideas/sin/fondo.png);
-}
-.texto-logo{
-    color: #E9424A;
-    font-family: logo;
-    font-size: 16px;
-    margin-left: 10px;
-    transform: translateY(-100);
-}
-.inicio {
-    display: flex;
-    background-color: #fce0e1;
-    height: 90vh;
-}
-.imagen{
-    height: 90vh;
-    width: 70%;
-    object-fit: cover;
-}
-.text-conteiner{
-    display: flex;
-    color: #ff7077;
-    flex-direction: column;
-}
-.titulo-inicio{
-    font-family: logo;
-    text-align: left;
-    font-size: 32px;
-    margin-left: 15%;
-    margin-right: 20%;
-    margin-top: 20%;
-    letter-spacing: 5px;
-}
-.texto-inicio{
-    font-family: textos;
-    text-align: left;
-    font-size: 16px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-.redes-sociales{
-    display: flex;
-    flex-direction: row;
-    margin-left: 15%;
-    margin-right: 15%;
-    align-content: space-around;
-}
-.rrss {
-    width: 40px;
-    height: 40px;
-    margin-right: 4%;
-    margin-top: 4%;
-}
 .img{
     align-items: center;
 }
@@ -351,23 +105,4 @@ left: 15%;
 .card_image_alta{
 width: 100%;
 height: 50%;
-
-}
-
-
-
-.piedepagina {
-    width: 100%;
-    background-color:#b9b6b6;
-}
-.text-footer h2{
-    color: #ffff;
-    font-family: logo;
-    font-size: 16px;
-    margin-bottom: 25px;
-}
-.text-footer h3{
-    color: #ffff;
-    font-family: logo;
-    font-size: 14px;
 }

@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    &::selection{
+        background-color: $mainColor;
+        color:$secondaryColor;
+
+    &::-webkit-scrollbar-thumb{
+        height: 2rem;
+        width: 1rem;
+
+    &::-webkit-scrollbar{
+        color: $secondaryColor;
+        background-color: $mainColor;
+        border-radius: 5px;
+    }    
+    }    
+    }
+}

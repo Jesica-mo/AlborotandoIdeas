@@ -1,0 +1,62 @@
+.piedepagina {
+    width: 100%;
+    background-color:#b9b6b6;
+
+    .grupo1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+
+        .figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img{
+                width: 50px;
+                height: 60px;
+                }
+        }
+
+        .text-footer h2{
+            color: #ffff;
+            font-family: logo;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .text-footer h3{
+            color: #ffff;
+            font-family: logo;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .text-footer p{
+            color: #ffff;
+            font-family: logo;
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+
+        .box h2{
+            color: #ffff;
+            font-family: logo;
+            font-size: 14px;
+            margin-bottom: 10px;
+            margin-left: 15%;
+        }
+    }
+    .grupo2{
+        background-color: #845558;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fce0e1;
+    }
+}

@@ -1,0 +1,43 @@
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20 px;
+    margin-bottom: 10%;
+
+    .item-galeria{
+        position: relative;
+        height: 80vh;
+        cursor: pointer;
+
+        .img-galeria{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 500ms;
+        }
+
+        &:hover >.capa{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .capa{
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.535);
+        opacity: 0;
+        visibility: hidden;
+        color: #fce0e1;
+        text-align: center;
+    
+                h3{
+                    margin-top: 40%;
+                    font-size: 100px;
+                    font-family: $fontTitulos;
+                    }
+
+    }
+    
+    }

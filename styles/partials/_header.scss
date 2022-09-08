@@ -1,0 +1,46 @@
+@mixin textos ($tipo, $tamano, $color){
+    font-family: $tipo;
+    font-size: $tamano;
+    color: $color;
+}
+
+.header {
+    height: 20vh; 
+    padding: 5px 10%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 15px;
+
+    .logo {
+        display: flex;
+        height: 70px;
+        width: auto;
+        justify-content: space-evenly;
+
+        .logo-img{
+            height: 60px;;
+            margin-right: 20px;
+            margin-left: 23px;
+            margin-bottom: 20px;
+            background-image: url(./images/logo/alborotando/ideas/sin/fondo.png);
+        }
+        .tipo-logo{
+            display: flex;
+            height: 70px;
+            flex-direction: column;
+
+            .texto-logo{
+                @include textos($fontTitulos,16px ,$mainColor );
+                margin-left: 10px;
+                transform: translateY(-100);
+            }
+            .titulos {
+                @include textos($fontTitulos,40px ,#000 )
+        }
+    }
+}
+}

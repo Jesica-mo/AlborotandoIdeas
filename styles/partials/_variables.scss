@@ -1,0 +1,25 @@
+// TIPOGRAFIAS
+@import url("./../../fonts/Poppins-Regular.ttf");
+$fontpoppins: Logo;
+
+@import url("./../../fonts/Autography.otf");
+$fontTitulos: Titulos;
+
+@import url("./../../fonts/kenyan/ coffee/ rg.ttf");
+$fontTextos: Textos;
+
+// / COLORES
+$mainColor: #E9424A;
+$secondaryColor: #fce0e1;
+$tercerColor: #ffaeb2;
+$cuartoColor: #ff7077;
+
+%titulo{
+    font-family: $fontpoppins;
+            text-align: left;
+            font-size: 32px;
+            margin-left: 15%;
+            margin-right: 20%;
+            margin-top: 20%;
+            letter-spacing: 5px;
+}

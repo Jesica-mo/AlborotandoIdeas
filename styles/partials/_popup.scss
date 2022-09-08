@@ -1,0 +1,63 @@
+.container-modal1 {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    &.container-modal1:target{
+        background-color:#845558b9;
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+    }
+    .popup1 {
+        width: 100%;
+        max-width: 900px;
+        height: 500px;
+        display: flex;
+        position: relative;
+        background-color: $secondaryColor;
+        left: 15%;
+
+        .imgmodal1{
+            width: 40%;
+            background-image: url(./images/eventos.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .text-modal1{
+            @extend %titulo
+
+            // &.h1{
+            //     font-size: 30px;
+            //     font-family: logo;
+            //     letter-spacing: 5px
+            // }
+        }
+        .btn-close-popup{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: -20px;
+            top: -20px;
+            padding: 20px;
+            background-color: #000;
+            color: #ffff;
+            text-decoration: none;
+            border-radius: 50%;
+            line-height: 10px;
+        
+        }
+    }
+        
+}
