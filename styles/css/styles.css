@@ -1,8 +1,8 @@
 @import url("./../../fonts/Poppins-Regular.ttf");
 @import url("./../../fonts/Autography.otf");
-@import url("./../../fonts/kenyan/ coffee/ rg.ttf");
-.inicio .text-conteiner .titulo-inicio, .container-modal1 .popup1 .text-modal1 {
-  font-family: Logo;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.inicio .text-conteiner .titulo-inicio {
+  font-family: "Poppins", sans-serif;
   text-align: left;
   font-size: 32px;
   margin-left: 15%;
@@ -52,13 +52,13 @@
       height: 70px;
       flex-direction: column; }
       .header .logo .tipo-logo .texto-logo {
-        font-family: Titulos;
+        font-family: "Poppins", sans-serif;
         font-size: 16px;
         color: #E9424A;
         margin-left: 10px;
         transform: translateY(-100); }
       .header .logo .tipo-logo .titulos {
-        font-family: Titulos;
+        font-family: "Autography";
         font-size: 40px;
         color: #000; }
 
@@ -75,7 +75,7 @@
     color: #ff7077;
     flex-direction: column; }
     .inicio .text-conteiner .texto-inicio {
-      font-family: Textos;
+      font-family: "Poppins", sans-serif;
       text-align: left;
       font-size: 16px;
       margin-left: 15%;
@@ -95,36 +95,36 @@
 .grid-ideas {
   display: flex;
   flex-direction: row;
-  height: 100vh; }
+  height: 70vh; }
   .grid-ideas .letra {
     display: flex;
     justify-content: space-evenly;
     padding-top: 5%;
-    height: 100%;
     width: 20%; }
     .grid-ideas .letra .letra-i {
-      height: 60%; }
+      height: 100%; }
       .grid-ideas .letra .letra-i:hover {
         transform: scale(0.8); }
     .grid-ideas .letra .letra-d {
-      height: 50%; }
+      height: 90%; }
       .grid-ideas .letra .letra-d:hover {
         transform: scale(1.2); }
     .grid-ideas .letra .letra-e {
-      height: 40%; }
+      height: 80%; }
       .grid-ideas .letra .letra-e.letra-e:hover {
         transform: scale(1.1); }
     .grid-ideas .letra .letra-a {
-      height: 55%; }
+      height: 90%; }
       .grid-ideas .letra .letra-a.letra-a:hover {
         transform: scale(0.6); }
     .grid-ideas .letra .letra-s {
-      height: 50%; }
+      height: 100%; }
       .grid-ideas .letra .letra-s.letra-s:hover {
         transform: scale(0.8); }
     .grid-ideas .letra .titulo-letra {
       position: absolute;
-      font-family: Logo;
+      display: block;
+      font-family: "Poppins", sans-serif;
       font-size: 20px;
       color: #ff7077;
       writing-mode: vertical-rl;
@@ -132,45 +132,61 @@
 
 .piedepagina {
   width: 100%;
-  background-color: #b9b6b6; }
+  height: 400px;
+  background-image: url("./../../images/fondo footer.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
   .piedepagina .grupo1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px; }
-    .piedepagina .grupo1 .figure {
-      width: 100%;
-      height: 100%;
+    display: flex;
+    margin-top: 200px;
+    flex-direction: row;
+    justify-content: space-between; }
+    .piedepagina .grupo1 .tipo-logo {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      align-items: center; }
-      .piedepagina .grupo1 .figure .img {
-        width: 50px;
-        height: 60px; }
+      margin-bottom: 20px; }
+      .piedepagina .grupo1 .tipo-logo .logo-img {
+        height: 60px;
+        margin-bottom: 5px; }
+      .piedepagina .grupo1 .tipo-logo .texto-logo {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        color: #E9424A;
+        transform: translateY(-100); }
+      .piedepagina .grupo1 .tipo-logo .titulos {
+        font-family: "Autography";
+        font-size: 16px;
+        color: #ffff; }
     .piedepagina .grupo1 .text-footer h2 {
-      color: #ffff;
-      font-family: logo;
+      color: #845558;
+      font-family: "Poppins", sans-serif;
       font-size: 16px;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      margin-left: 50px; }
     .piedepagina .grupo1 .text-footer h3 {
-      color: #ffff;
-      font-family: logo;
-      font-size: 14px;
-      margin-bottom: 10px; }
-    .piedepagina .grupo1 .text-footer p {
-      color: #ffff;
-      font-family: logo;
-      font-size: 12px;
-      margin-bottom: 25px; }
-    .piedepagina .grupo1 .box h2 {
-      color: #ffff;
-      font-family: logo;
+      color: #845558;
+      font-family: "Poppins", sans-serif;
       font-size: 14px;
       margin-bottom: 10px;
-      margin-left: 15%; }
+      margin-left: 50px; }
+    .piedepagina .grupo1 .text-footer p {
+      color: #845558;
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      margin-bottom: 25px;
+      margin-left: 50px; }
+    .piedepagina .grupo1 .box h2 {
+      color: #845558;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-right: 50px; }
   .piedepagina .grupo2 {
     background-color: #845558;
     padding: 15px 10px;
@@ -178,49 +194,59 @@
     color: #fce0e1; }
 
 .container-modal1 {
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 600ms;
+  background-color: #845558db;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  align-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0; }
   .container-modal1.container-modal1:target {
-    background-color: #845558b9;
     visibility: visible;
-    opacity: 1;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
+    opacity: 1; }
   .container-modal1 .popup1 {
-    width: 100%;
-    max-width: 900px;
-    height: 500px;
-    display: flex;
-    position: relative;
     background-color: #fce0e1;
-    left: 15%; }
+    box-shadow: 0px 0px 5px 0px rgba(252, 224, 225, 0);
+    border-radius: 3px;
+    font-family: "Autography";
+    padding: 20 px;
+    text-align: left;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: row; }
     .container-modal1 .popup1 .imgmodal1 {
-      width: 40%;
-      background-image: url(./images/eventos.jpg);
-      background-size: cover;
-      background-position: center; }
+      height: 100%; }
+    .container-modal1 .popup1 .text-modal1 {
+      font-family: "Poppins", sans-serif;
+      text-align: left;
+      font-size: 20px;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 5%; }
+      .container-modal1 .popup1 .text-modal1 .h1 {
+        font-size: 24px;
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 50px; }
     .container-modal1 .popup1 .btn-close-popup {
       width: 50px;
       height: 50px;
       position: absolute;
-      right: -20px;
-      top: -20px;
+      right: 50px;
+      top: 50px;
       padding: 20px;
-      background-color: #000;
-      color: #ffff;
-      text-decoration: none;
+      font-size: 16px;
+      line-height: 10px;
+      display: block;
+      text-align: right;
+      color: #fce0e1;
+      background-color: black;
       border-radius: 50%;
-      line-height: 10px; }
+      text-decoration: none; }
 
 .grid-galeria {
   display: grid;
@@ -252,7 +278,42 @@
     .grid-galeria .capa h3 {
       margin-top: 40%;
       font-size: 100px;
-      font-family: Titulos; }
+      font-family: "Autography"; }
+
+.suscripcion {
+  background-color: #fce0e1;
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+  flex-direction: column; }
+  .suscripcion .text-sus {
+    font-family: "Poppins", sans-serif;
+    font-size: 6px;
+    text-align: center; }
+    .suscripcion .text-sus form {
+      flex-direction: column;
+      width: 100%; }
+      .suscripcion .text-sus form .contenedor_inputs {
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 40px;
+        height: 40px;
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid #ffff;
+        border-radius: 5px; }
+      .suscripcion .text-sus form .btn-submit {
+        height: 30px;
+        padding: 0 20px;
+        background-color: #E9424A;
+        color: #ffff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px; }
 
 .galeria {
   height: 100%; }

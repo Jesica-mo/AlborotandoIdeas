@@ -34,7 +34,7 @@
             flex-direction: column;
 
             .texto-logo{
-                @include textos($fontTitulos,16px ,$mainColor );
+                @include textos($fontpoppins,16px ,$mainColor );
                 margin-left: 10px;
                 transform: translateY(-100);
             }

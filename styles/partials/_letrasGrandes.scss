@@ -1,48 +1,47 @@
 .grid-ideas{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 70vh;
 
     .letra {
         display: flex;
         justify-content: space-evenly;
         padding-top: 5%;
-        height: 100%;
         width: 20%;
 
         .letra-i{
-            height: 60%;
+            height: 100%;
 
             &:hover{
                 transform: scale(0.8);
             } } 
     .letra-d{
-        height: 50%;
+        height: 90%;
 
         &:hover{
             transform: scale(1.2);
         }}
     .letra-e{
-        height: 40%;
+        height: 80%;
 
        &.letra-e:hover{
         transform: scale(1.1);
     } } 
     .letra-a{
-        height: 55%;
+        height: 90%;
 
         &.letra-a:hover{
             transform: scale(0.6);
     }}
     .letra-s{
-        height: 50%;
+        height: 100%;
     
         &.letra-s:hover{
             transform: scale(0.8);
         }} 
     .titulo-letra{
         position: absolute;
-        // display: block;
+        display: block;
         font-family: $fontpoppins;
         font-size: 20px;
         color: #ff7077;

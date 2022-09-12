@@ -1,63 +1,84 @@
-.container-modal1 {
-    width: 100%;
-    height: 100%;
-    padding: 40px;
+.container-modal1{
+    background-color:#845558db;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     visibility: hidden;
     opacity: 0;
-    transition: all 600ms;
-    display: flex;
-    align-content: center;
-    align-items: center;
 
     &.container-modal1:target{
-        background-color:#845558b9;
         visibility: visible;
         opacity: 1;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        
     
     }
-    .popup1 {
-        width: 100%;
-        max-width: 900px;
-        height: 500px;
-        display: flex;
-        position: relative;
-        background-color: $secondaryColor;
-        left: 15%;
 
-        .imgmodal1{
-            width: 40%;
-            background-image: url(./images/eventos.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-        .text-modal1{
-            @extend %titulo
+        .popup1{
+            background-color: $secondaryColor ;
+            box-shadow: 0px 0px 5px 0px rgba($color: $secondaryColor, $alpha: 0.0);
+            border-radius: 3px;
+            font-family: $fontTitulos;
+            padding: 20 px;
+            text-align: left;
+            width: 60%;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
 
-            // &.h1{
-            //     font-size: 30px;
-            //     font-family: logo;
-            //     letter-spacing: 5px
-            // }
-        }
-        .btn-close-popup{
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            right: -20px;
-            top: -20px;
-            padding: 20px;
-            background-color: #000;
-            color: #ffff;
-            text-decoration: none;
-            border-radius: 50%;
-            line-height: 10px;
+            .imgmodal1{
+                height: 100%;
+            }
+
+            .text-modal1{
+                font-family: $fontpoppins;
+                text-align: left;
+                font-size: 20px;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 5%;
+    
+                .h1{
+                    font-size: 24px;
+                    font-family: $fontpoppins;
+                    letter-spacing: 50px;
+                }
+            }
+
+
+            .btn-close-popup{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right: 50px;
+                top: 50px;
+                padding: 20px;
+                font-size: 16px;
+                line-height: 10px;
+                display: block;
+                text-align: right;
+                color: $secondaryColor;
+                background-color: black;
+                border-radius: 50%;
+                text-decoration: none;
+            }
         
         }
-    }
-        
+
+
+    // &.container-modal1:target{
+    //     background-color:#845558b9;
+    //     visibility: visible;
+    //     opacity: 1;
+    //     position: fixed;
+    //     top: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    
+    // }
 }

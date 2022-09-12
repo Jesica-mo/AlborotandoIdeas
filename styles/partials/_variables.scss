@@ -1,12 +1,13 @@
 // TIPOGRAFIAS
 @import url("./../../fonts/Poppins-Regular.ttf");
-$fontpoppins: Logo;
+$fontpoppins: 'Poppins', sans-serif;
 
 @import url("./../../fonts/Autography.otf");
-$fontTitulos: Titulos;
+$fontTitulos: 'Autography';
 
-@import url("./../../fonts/kenyan/ coffee/ rg.ttf");
-$fontTextos: Textos;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+$fontTextos: 'Poppins', sans-serif;
+
 
 // / COLORES
 $mainColor: #E9424A;
