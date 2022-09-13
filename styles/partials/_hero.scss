@@ -13,6 +13,15 @@
         color: $cuartoColor;
         flex-direction: column;
 
+        .texto-inicio-blog{
+            font-family: $fontpoppins;
+            text-align: left;
+            font-size: 16px;
+            margin-left: 15%;
+            margin-right: 15%;
+
+        }
+
         .titulo-inicio{
             @extend %titulo
         }
@@ -29,6 +38,7 @@
             margin-left: 15%;
             margin-right: 15%;
             align-content: space-around;
+
 
             .rrss {
                 width: 40px;

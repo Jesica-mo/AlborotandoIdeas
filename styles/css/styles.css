@@ -35,7 +35,8 @@
   align-items: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 15px; }
+  padding: 15px;
+  text-decoration: none; }
   .header .logo {
     display: flex;
     height: 70px;
@@ -50,7 +51,8 @@
     .header .logo .tipo-logo {
       display: flex;
       height: 70px;
-      flex-direction: column; }
+      flex-direction: column;
+      text-decoration: none; }
       .header .logo .tipo-logo .texto-logo {
         font-family: "Poppins", sans-serif;
         font-size: 16px;
@@ -74,6 +76,12 @@
     display: flex;
     color: #ff7077;
     flex-direction: column; }
+    .inicio .text-conteiner .texto-inicio-blog {
+      font-family: "Poppins", sans-serif;
+      text-align: left;
+      font-size: 16px;
+      margin-left: 15%;
+      margin-right: 15%; }
     .inicio .text-conteiner .texto-inicio {
       font-family: "Poppins", sans-serif;
       text-align: left;
@@ -314,6 +322,35 @@
         font-size: 16px;
         border: none;
         border-radius: 5px; }
+
+.fondo {
+  background-color: #fce0e1;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  flex-direction: column;
+  margin-bottom: 5%;
+  margin-top: 5%; }
+  .fondo .texto-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+    .fondo .texto-info .titulos {
+      font-family: "Poppins", sans-serif;
+      font-size: 32px;
+      margin-left: 15%;
+      margin-right: 20%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      letter-spacing: 5px;
+      color: #E9424A; }
+    .fondo .texto-info .texto {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px; }
+    .fondo .texto-info .negrita {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px; }
 
 .galeria {
   height: 100%; }
