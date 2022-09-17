@@ -3,7 +3,13 @@
     font-size: $tamano;
     color: $color;
 }
+.a{
+    text-decoration: none;
+}
 
+.logo{
+    text-decoration: none;
+}
 .header {
     height: 20vh; 
     padding: 5px 10%;
@@ -15,6 +21,10 @@
     background-attachment: fixed;
     padding: 15px;
     text-decoration: none;
+    position: sticky;
+    top: 0;
+    background-color: #ffff;
+    width: 100%;
 
     .logo {
         display: flex;
@@ -45,4 +55,33 @@
         }
     }
 }
+}
+
+@media screen and (max-width: 480px){
+    .header{
+       width: 100vh;
+       flex-direction: column;
+       align-items: flex-start;
+
+    }
+    .titulos{
+        visibility: hidden;
+    }
+    .logo{
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+    }
+    .logo-img{
+        padding: 0;
+        margin-left: 0%;
+        width: 20%;
+        height: 20%;
+        margin-top: 10vh;
+    }
+    .texto-logo{
+        font-size: 8px;
+    }
+    
+    
 }

@@ -17,68 +17,143 @@
         
     
     }
+}
+.popup{
+    background-color: $secondaryColor ;
+    box-shadow: 0px 0px 5px 0px rgba($color: $secondaryColor, $alpha: 0.0);
+    border-radius: 3px;
+    padding: 20 px;
+    text-align: left;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
 
-        .popup1{
-            background-color: $secondaryColor ;
-            box-shadow: 0px 0px 5px 0px rgba($color: $secondaryColor, $alpha: 0.0);
-            border-radius: 3px;
-            font-family: $fontTitulos;
-            padding: 20 px;
-            text-align: left;
-            width: 60%;
-            height: 70%;
-            display: flex;
-            flex-direction: row;
+    .imgmodal{
+        height: 100%;
+    }
 
-            .imgmodal1{
-                height: 100%;
-            }
+    .text-modal{
+        font-family: $fontpoppins;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
 
-            .text-modal1{
-                font-family: $fontpoppins;
-                text-align: left;
-                font-size: 20px;
-                margin-left: 5%;
-                margin-right: 5%;
-                margin-top: 5%;
-    
-                .h1{
-                    font-size: 24px;
-                    font-family: $fontpoppins;
-                    letter-spacing: 50px;
-                }
-            }
-
-
-            .btn-close-popup{
-                width: 50px;
-                height: 50px;
-                position: absolute;
-                right: 50px;
-                top: 50px;
-                padding: 20px;
-                font-size: 16px;
-                line-height: 10px;
-                display: block;
-                text-align: right;
-                color: $secondaryColor;
-                background-color: black;
-                border-radius: 50%;
-                text-decoration: none;
-            }
-        
+        .h3{
+            font-size: 10px;
+            font-family: $fontpoppins;
+            padding-bottom: 30vh;
+            
         }
 
+        .p{
+            font-size: 14px;
+            padding: 15%;
+        }
+    }
 
-    // &.container-modal1:target{
-    //     background-color:#845558b9;
-    //     visibility: visible;
-    //     opacity: 1;
-    //     position: fixed;
-    //     top: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     right: 0;
+
+    .btn-close-popup{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        padding: 20px;
+        font-size: 16px;
+        line-height: 10px;
+        display: block;
+        text-align: right;
+        color: $secondaryColor;
+        background-color: black;
+        border-radius: 50%;
+        text-decoration: none;
+        font-family: $fontpoppins;
+    }
+
+}
+
+.container-modal2{
+    background-color:#845558db;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+
+    &.container-modal2:target{
+        visibility: visible;
+        opacity: 1;
+        
     
-    // }
+    }
+}
+
+.container-modal3{
+    background-color:#845558db;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+
+    &.container-modal3:target{
+        visibility: visible;
+        opacity: 1;
+        
+    
+    }
+}
+
+.container-modal4{
+    background-color:#845558db;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+
+    &.container-modal4:target{
+        visibility: visible;
+        opacity: 1;
+        
+    
+    }
+}
+
+.container-modal5{
+    background-color:#845558db;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+
+    &.container-modal5:target{
+        visibility: visible;
+        opacity: 1;
+        
+    
+    }
 }

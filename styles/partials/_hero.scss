@@ -2,6 +2,7 @@
     display: flex;
     background-color:$secondaryColor;
     height: 90vh;
+    width: 100%;
 
     .imagen{
         height: 90vh;
@@ -10,6 +11,7 @@
     }
     .text-conteiner{
         display: flex;
+        width: 100vh;
         color: $cuartoColor;
         flex-direction: column;
 
@@ -48,4 +50,20 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 480px) {
+    .inicio{
+        flex-direction: column;
+        background-color: $secondaryColor;
+    }
+    .imagen{
+       width: 100vh;
+        
+    }
+    .text-conteiner{
+        font-size: 14px;
+    }
+
+    
 }
