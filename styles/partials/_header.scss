@@ -57,31 +57,3 @@
 }
 }
 
-@media screen and (max-width: 480px){
-    .header{
-       width: 100vh;
-       flex-direction: column;
-       align-items: flex-start;
-
-    }
-    .titulos{
-        visibility: hidden;
-    }
-    .logo{
-        padding: 0;
-        height: auto;
-        flex-direction: column;
-    }
-    .logo-img{
-        padding: 0;
-        margin-left: 0%;
-        width: 20%;
-        height: 20%;
-        margin-top: 10vh;
-    }
-    .texto-logo{
-        font-size: 8px;
-    }
-    
-    
-}

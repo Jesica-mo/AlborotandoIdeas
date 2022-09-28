@@ -49,3 +49,29 @@
     }
     }
 }
+
+@media screen and(max-width:1400px) {
+    .grid-ideas{
+        .letra{
+            width: 20%;
+            height: 50%;
+            
+
+            .titulo-letra{
+                writing-mode: vertical-lr;
+
+            }
+        }
+    }
+}
+
+@media screen and(max-width:720px){
+    .grid-ideas{
+        
+        .letra{
+            width: 20%;
+            height: 30%;
+        }
+
+    }
+}

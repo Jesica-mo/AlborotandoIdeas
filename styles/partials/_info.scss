@@ -6,21 +6,20 @@
     border-radius: 20px;
     flex-direction: column;
     margin-bottom: 5%;
-    margin-top: 5%;
 
     .texto-info {
         text-align: center;
         display: flex;
         flex-direction: column;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 8%;
+        padding-bottom: 8%;
     
 
     .titulos{
         font-family: $fontpoppins;
         font-size: 32px;
-        margin-left: 15%;
-        margin-right: 20%;
-        margin-top: 5%;
-        margin-bottom: 5%;
         letter-spacing: 5px;
         color: $mainColor;
     }
@@ -33,6 +32,10 @@
     .negrita{
         font-family: $fontTextos;
         font-size: 14px;
+    }
+    .subtitulo{
+        font-family: $fontTitulos;
+        font-size: 30px;
     }
 }
 }

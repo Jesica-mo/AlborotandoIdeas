@@ -43,27 +43,80 @@
 
 
             .rrss {
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
                 margin-right: 4%;
                 margin-top: 4%;
+                margin-right: 4%;
+                
             }
         }
     }
 }
 
-@media screen and (max-width: 480px) {
-    .inicio{
-        flex-direction: column;
-        background-color: $secondaryColor;
-    }
-    .imagen{
-       width: 100vh;
-        
-    }
-    .text-conteiner{
-        font-size: 14px;
-    }
 
-    
+@media screen and(max-width:1000px){
+    .inicio {
+        flex-direction: column;
+
+        .imagen{
+            width: 100%;
+            height: 40vh;
+        }
+
+        .text-conteiner{
+            width: 800px;
+
+            .titulo-inicio{
+                width: 80%;
+                margin-top: 10%;
+                margin-left: 10%;
+                margin-right: 50%;
+                font-size: 24px;
+            
+            }
+            .texto-inicio{
+                width: 80%;
+                margin-top: 0%;
+                margin-left: 10%;
+                margin-right: 10vh;
+                right: 10%;
+                font-size: 16px;
+                
+            }
+            .redes-sociales{
+                margin-top: 0%;
+                margin-left: 10%;
+                padding: 0%;
+            }
+        }}   
+}
+@media screen and(max-width:720px){
+    .inicio {
+        flex-direction: column;
+
+        .imagen{
+            width: 100%;
+            height: 40vh;
+        }
+
+        .text-conteiner{
+            width: 500px;
+        }
+}
+}
+
+@media screen and(max-width:450px){
+    .inicio {
+        flex-direction: column;
+
+        .imagen{
+            width: 100%;
+            height: 40vh;
+        }
+
+        .text-conteiner{
+            width: 300px;
+        }
+}
 }

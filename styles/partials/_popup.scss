@@ -157,3 +157,287 @@
     
     }
 }
+
+.accordion {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+
+    .accordion-header{
+        font-family: $fontpoppins;
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+    .accordion-collapse{
+        border-color: none;
+
+        .accordion-body{
+            font-family: $fontTextos;
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-size: 14px;
+
+            .imgblog1{
+                margin-left: 3%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                margin-right: 3%;
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1200px) {
+    
+        .container-modal1{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 100vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    
+    @media screen and(max-width:1000px){
+        .container-modal1{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 70vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:650px){
+        .container-modal1{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 40vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+    
+        .container-modal2{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 100vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    
+    @media screen and(max-width:1000px){
+        .container-modal2{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 70vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:650px){
+        .container-modal2{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 40vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:1200px) {
+    
+        .container-modal3{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 100vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    
+    @media screen and(max-width:1000px){
+        .container-modal3{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 70vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:650px){
+        .container-modal3{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 40vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:1200px) {
+    
+        .container-modal4{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 100vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    
+    @media screen and(max-width:1000px){
+        .container-modal4{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 70vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:650px){
+        .container-modal4{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 40vh;
+                height: 90vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:1200px) {
+    
+        .container-modal5{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 100vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    
+    @media screen and(max-width:1000px){
+        .container-modal5{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 70vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:650px){
+        .container-modal5{
+            flex-direction: column;
+            width: 100%;
+
+            .popup{
+                flex-direction: column;
+                width: 40vh;
+
+                .imgmodal{
+                    height: 50%;
+                    object-fit:cover;
+                }
+            }
+        }
+    }

@@ -2,11 +2,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 20 px;
-    margin-bottom: 10%;
 
     .item-galeria{
         position: relative;
-        height: 80vh;
+        height: 90vh;
         cursor: pointer;
 
         .img-galeria{
@@ -39,5 +38,55 @@
                     }
 
     }
+    .slide{
+        height: 90vh;
+
+        .carousel-item{
+            height: 90vh;
+            object-fit: cover;
+        }
+    }
     
     }
+
+@media screen and(max-width:1000px) {
+    .grid-galeria{
+        grid-template-columns: 1fr;
+
+        .item-galeria{
+            height: 40vh;
+        }
+        
+        .carousel{
+            height: 40%;
+            .carousel-item {
+                width: 100%;
+            
+            }
+        }
+        
+    }
+       
+        
+    }
+    @media screen and(max-width:500px) {
+        .grid-galeria{
+            grid-template-columns: 1fr;
+    
+            .item-galeria{
+                height: 40vh;
+            }
+            
+            .slide{
+                height: 5%;
+                .carousel-item {
+                    width: 100%;
+                
+                }
+            }
+            
+        }
+           
+            
+        }
+    
