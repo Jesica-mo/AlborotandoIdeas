@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 .header {
-    height: 20vh; 
+    height: 150px; 
     padding: 5px 10%;
     margin: 0%;
     display: flex;
@@ -57,3 +57,9 @@
 }
 }
 
+@media screen and(max-width:800px){
+    .header{
+        height: 100px;
+    }
+    
+}

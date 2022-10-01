@@ -208,6 +208,25 @@
     }
     
     @media screen and(max-width:1000px){
+        .accordion {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 5%;
+
+            .accordion-header{
+                font-size: 60px;
+            }
+
+            .accordion-collapse{
+
+            .accordion-body{
+                font-family: $fontTextos;
+                text-align: center;
+                margin-left: 5%;
+                margin-right: 5%;
+                font-size: 24px;}
+        } }
+            
         .container-modal1{
             flex-direction: column;
             width: 100%;

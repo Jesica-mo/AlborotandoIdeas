@@ -33,7 +33,7 @@
   text-decoration: none; }
 
 .header {
-  height: 20vh;
+  height: 150px;
   padding: 5px 10%;
   margin: 0%;
   display: flex;
@@ -73,6 +73,10 @@
         font-family: "Autography";
         font-size: 40px;
         color: #000; }
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 100px; } }
 
 .inicio {
   display: flex;
@@ -133,7 +137,14 @@
         margin-left: 10%;
         margin-right: 10vh;
         right: 10%;
-        font-size: 16px; }
+        font-size: 24px; }
+      .inicio .text-conteiner .texto-inicio-blog {
+        width: 80%;
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: 10vh;
+        right: 10%;
+        font-size: 24px; }
       .inicio .text-conteiner .redes-sociales {
         margin-top: 0%;
         margin-left: 10%;
@@ -187,14 +198,14 @@
       .grid-ideas .letra .letra-s.letra-s:hover {
         transform: scale(0.8); }
     .grid-ideas .letra .titulo-letra {
-      position: absolute;
+      text-decoration: none;
       display: block;
       font-family: "Poppins", sans-serif;
       font-size: 20px;
       color: #ff7077;
       text-decoration: none; }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .grid-ideas .letra {
     width: 20%;
     height: 50%; }
@@ -430,6 +441,18 @@
         object-fit: cover; } }
 
 @media screen and (max-width: 1000px) {
+  .accordion {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%; }
+    .accordion .accordion-header {
+      font-size: 60px; }
+    .accordion .accordion-collapse .accordion-body {
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 24px; }
   .container-modal1 {
     flex-direction: column;
     width: 100%; }
@@ -643,14 +666,13 @@
 .suscripcion {
   background-color: #fce0e1;
   width: 80%;
-  height: 40vh;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   border-radius: 20px;
-  flex-direction: column;
-  padding-top: 5%; }
+  flex-direction: column; }
   .suscripcion .text-sus {
     font-family: "Poppins", sans-serif;
     font-size: 6px;
@@ -681,10 +703,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 8%;
-  padding-bottom: 8%;
   justify-items: center;
   align-items: center; }
   .contacto .ContactoTitulo {
@@ -698,11 +716,9 @@
   .contacto .formulario {
     display: flex;
     flex-direction: column;
-    width: 100vh;
     align-items: center;
     justify-content: center; }
     .contacto .formulario .row {
-      width: 100vh;
       height: 30vh;
       display: flex;
       border-radius: 20px;
@@ -712,9 +728,9 @@
       .contacto .formulario .row .form-control {
         color: #E9424A;
         background-color: #fce0e1;
-        padding: 2%; }
+        padding: 2%;
+        width: 80vh; }
     .contacto .formulario .form-floating {
-      width: 100vh;
       height: 30vh;
       display: flex;
       border-radius: 20px;
@@ -724,11 +740,13 @@
       .contacto .formulario .form-floating .form-control {
         color: #E9424A;
         background-color: #fce0e1;
-        padding: 2%; }
+        padding: 2%;
+        height: 30vh;
+        margin-bottom: 50px;
+        width: 80vh; }
     .contacto .formulario .btn-submit {
       height: 8vh;
       width: 30vh;
-      padding: 0 20vh;
       background-color: #E9424A;
       color: #ffff;
       font-size: 16px;
@@ -736,28 +754,45 @@
       border-radius: 5px; }
 
 @media screen and (max-width: 1000px) {
-  .btn-submit {
-    font-size: 24px; }
-  .row .form-control {
+  .contacto .ContactoTitulo {
+    font-size: 30px; }
+  .contacto .texto {
+    font-size: 30px; }
+  .contacto .formulario .row .form-control {
     width: 60vh;
-    margin-left: 20vh; }
-  .form-floating {
-    width: 60vh; }
-    .form-floating .form-control {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding: 5%; }
+  .contacto .formulario .form-floating {
+    width: 60vh;
+    font-size: 24px; }
+    .contacto .formulario .form-floating .form-control {
       width: 60vh;
-      height: 40vh; } }
+      height: 50vh;
+      margin-bottom: 30px; }
+  .contacto .formulario .btn-submit {
+    font-size: 36px; } }
 
-@media screen and (max-width: 850px) {
-  .btn-submit {
+@media screen and (max-width: 600px) {
+  .contacto .ContactoTitulo {
+    font-size: 30px; }
+  .contacto .texto {
+    font-size: 30px; }
+  .contacto .formulario .row .form-control {
+    width: 20vh;
+    font-size: 36px;
+    margin-bottom: 30px;
+    padding: 5%; }
+  .contacto .formulario .form-floating {
+    width: 20vh;
     font-size: 24px; }
-  .row .form-control {
-    width: 60vh;
-    margin-left: 20vh; }
-  .form-floating {
-    width: 60vh; }
-    .form-floating .form-control {
-      width: 60vh;
-      height: 40vh; } }
+    .contacto .formulario .form-floating .form-control {
+      width: 20vh;
+      height: 50vh;
+      margin-bottom: 30px;
+      font-size: 36px; }
+  .contacto .formulario .btn-submit {
+    font-size: 36px; } }
 
 .fondo {
   background-color: #fce0e1;
@@ -789,3 +824,9 @@
     .fondo .texto-info .subtitulo {
       font-family: "Autography";
       font-size: 30px; }
+
+@media screen and (max-width: 800px) {
+  .texto {
+    font-size: 36px; }
+  .negrita {
+    font-size: 24px; } }
