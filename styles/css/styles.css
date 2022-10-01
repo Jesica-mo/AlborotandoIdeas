@@ -171,7 +171,8 @@
 .grid-ideas {
   display: flex;
   flex-direction: row;
-  height: 70vh; }
+  height: 70vh;
+  text-decoration: none; }
   .grid-ideas .letra {
     display: flex;
     justify-content: space-evenly;
@@ -202,8 +203,7 @@
       display: block;
       font-family: "Poppins", sans-serif;
       font-size: 20px;
-      color: #ff7077;
-      text-decoration: none; }
+      color: #ff7077; }
 
 @media screen and (max-width: 1200px) {
   .grid-ideas .letra {
